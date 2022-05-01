@@ -19,6 +19,8 @@ class CityGraph implements IndexedGraph<City> {
      */
     ObjectMap<City, Array<Connection<City>>> streetsMap = new ObjectMap<>();
 
+
+
     private int lastNodeIndex = 0;
 
     public void addCity(City city) {
