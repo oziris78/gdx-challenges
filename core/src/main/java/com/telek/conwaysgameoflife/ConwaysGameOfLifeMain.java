@@ -7,6 +7,9 @@ import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.utils.viewport.*;
 import com.telek.telekgdx.screens.*;
 import com.telek.telekmath.advanced.random.*;
+
+import java.util.Random;
+
 import space.earlygrey.shapedrawer.*;
 
 
@@ -111,10 +114,10 @@ public class ConwaysGameOfLifeMain extends ApplicationAdapter implements InputPr
     }
 
     private void randomizeGrid(){
-
+        Random random = new Random();
         for (int i = 0; i < GRID_COUNT; i++) {
             for (int j = 0; j < GRID_COUNT; j++) {
-                grid[i][j] = TRandom.randomNumberLCG(i * j * j, i + j) % 10 >= 7 ? 1 : 0;
+                grid[i][j] = random.nextInt(10) >= 7 ? 1 : 0;
             }
         }
     }
