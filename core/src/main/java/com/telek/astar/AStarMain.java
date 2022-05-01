@@ -33,7 +33,7 @@ public class AStarMain implements ApplicationListener {
         camera.update();
 
         grid = new GridAI(0, 0, 10, 10, 50);
-        grid.colorShortestPath(2, 2, 8, 8);
+        grid.colorShortestPath(2, 0, 8, 8);
 
     }
 
