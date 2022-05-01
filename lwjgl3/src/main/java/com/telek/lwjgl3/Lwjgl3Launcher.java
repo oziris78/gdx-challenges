@@ -4,6 +4,7 @@ import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application;
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration;
 import com.telek._exercises.shaders.shockwave.ShochwaveShaderTest;
 import com.telek.astar.AStarMain;
+import com.telek.conwaysgameoflife.ConwaysGameOfLifeMain;
 
 
 public class Lwjgl3Launcher {
@@ -22,7 +23,7 @@ public class Lwjgl3Launcher {
 		// useful for testing performance, but can also be very stressful to some hardware.
 		// You may also need to configure GPU drivers to fully disable Vsync; this can cause screen tearing.
 
-		new Lwjgl3Application(new AStarMain(), config);
+		new Lwjgl3Application(new ConwaysGameOfLifeMain(), config);
 	}
 
 
