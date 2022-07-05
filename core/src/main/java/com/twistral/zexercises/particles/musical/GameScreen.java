@@ -8,7 +8,7 @@ import static com.badlogic.gdx.scenes.scene2d.actions.Actions.*;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 import com.twistral.toriagdx.screens.TScreenUtils;
 
-public class GameScreen implements Screen {
+class GameScreen implements Screen {
 
     private Stage stage;
 

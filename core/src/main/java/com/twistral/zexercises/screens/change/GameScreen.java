@@ -8,7 +8,7 @@ import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.math.Vector2;
 
-public class GameScreen extends ScreenAdapter {
+class GameScreen extends ScreenAdapter {
 
     HelloWorldGame game;
 
